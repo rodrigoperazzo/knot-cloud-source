@@ -4,6 +4,8 @@ services:
     build: .
     image: knot/cloud
     container_name: cloud
+    environment:
+      - DEBUG=*
     ports:
       - '3000:3000'
       - '1883:1883'
